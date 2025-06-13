@@ -40,8 +40,11 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
       "better-sqlite3",
-      "sharp"
+      "sharp",
+      "sqlite3",
+      "unrs-resolver"
     ],
     "ignoredBuiltDependencies": [
       "@parcel/watcher",
