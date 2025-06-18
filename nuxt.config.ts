@@ -83,7 +83,7 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
       crawlLinks: true,
-      routes: ['/en', '/fr'],
+      routes: ['/nl', '/fr'],
     },
   },
 
@@ -101,8 +101,8 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', name: 'English', language: 'en-US' },
-      { code: 'fr', name: 'French', language: 'fr-FR' },
+      { code: 'nl', name: 'Nederlands', language: 'nl-NL' },
+      // { code: 'fr', name: 'French', language: 'fr-FR' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     strategy: 'prefix',
-    defaultLocale: 'en',
+    defaultLocale: 'nl',
   },
 
   icon: {

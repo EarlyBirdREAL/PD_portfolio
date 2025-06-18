@@ -42,13 +42,13 @@ const commonFaqSchema = z.object({
 })
 
 export const collections = {
-  content_en: defineCollection(
+  content_nl: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'en/**/*.md',
-        exclude: ['en/articles/*.md'],
-        prefix: '/en',
+        include: 'nl/**/*.md',
+        exclude: ['nl/articles/*.md'],
+        prefix: '/nl',
       },
       schema: commonContentSchema,
     }),
@@ -64,12 +64,12 @@ export const collections = {
       schema: commonContentSchema,
     }),
   ),
-  articles_en: defineCollection(
+  articles_nl: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'en/articles/*.md',
-        prefix: '/en/articles',
+        include: 'nl/articles/*.md',
+        prefix: '/nl/articles',
       },
       schema: commonArticleSchema,
     }),
@@ -84,10 +84,10 @@ export const collections = {
       schema: commonArticleSchema,
     }),
   ),
-  projects_en: defineCollection(
+  projects_nl: defineCollection(
     asSeoCollection({
       type: 'data',
-      source: 'en/projects/*.json',
+      source: 'nl/projects/*.json',
       schema: commonProjectSchema,
     }),
   ),
@@ -111,9 +111,9 @@ export const collections = {
       ),
     }),
   }),
-  faq_en: defineCollection({
+  faq_nl: defineCollection({
     type: 'data',
-    source: 'en/faq.json',
+    source: 'nl/faq.json',
     schema: commonFaqSchema,
   }),
   faq_fr: defineCollection({

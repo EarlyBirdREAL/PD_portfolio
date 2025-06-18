@@ -11,7 +11,7 @@ import en_writing from './en/writing.json'
 import fr_writing from './fr/writing.json'
 
 const messages = {
-  en: {
+  nl: {
     navigation: en_navigation,
     contact: en_contact,
     global: en_global,
